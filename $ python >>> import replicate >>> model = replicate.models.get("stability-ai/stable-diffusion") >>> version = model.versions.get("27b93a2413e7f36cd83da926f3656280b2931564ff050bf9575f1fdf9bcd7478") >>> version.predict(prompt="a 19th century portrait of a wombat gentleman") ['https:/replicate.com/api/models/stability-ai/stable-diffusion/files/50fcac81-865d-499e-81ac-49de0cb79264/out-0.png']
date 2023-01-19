@@ -1,0 +1,7 @@
+$ python
+>>> import replicate
+>>> model = replicate.models.get("stability-ai/stable-diffusion")
+>>> version = model.versions.get("27b93a2413e7f36cd83da926f3656280b2931564ff050bf9575f1fdf9bcd7478")
+>>> version.predict(prompt="a 19th century portrait of a wombat gentleman")
+['https://replicate.com/api/models/stability-ai/stable-diffusion/files/50fcac81-865d-499e-81ac-49de0cb79264/out-0.png']
+Enter
